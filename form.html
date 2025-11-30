@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#contact.html">Contact</a>
+        <a href="form.html">Form</a>
+        <a href="#other.html">Others</a>
+    </div>
+    <form class="form" action="server.php" method="post">
+        <div class="Formcontainer">
+            <div class="Usercontainer">
+                <label for="UserName">UserName:</label>
+                <input type="text" id="UserName" name="UserName" placeholder="Enter UserName">
+            </div>
+
+            <div class="passwordcontainer">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a password ">
+            </div>
+
+            <div class="checkcontainer">
+                <input type="checkbox">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="logincontainer">
+                <input type="submit" value="login">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

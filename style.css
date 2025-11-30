@@ -1,0 +1,94 @@
+body {
+  padding-top: 20px;
+}
+.navbar {
+  position: fixed;
+  text-align: right;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: wheat;
+  border: 2px solid black;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+.navbar:hover {
+  background-color: black;
+  border: 2px solid wheat;
+}
+.navbar:hover a {
+  color: yellow;
+}
+
+.redbox {
+  padding: 5px;
+  background-color: red;
+  border: 5px;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.redbox:hover {
+  background-color: blue;
+}
+
+.bluebox {
+  padding: 5px;
+  background-color: blue;
+  border: 5px;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  display: inline-block;
+}
+.bluebox:hover {
+  background-color: red;
+}
+.Formcontainer {
+  margin: 100px auto 0;
+  width: 250px;
+  padding: 15px;
+  border: 5px solid lime;
+  border-radius: 10px;
+  background-color:black;
+}
+#UserName::placeholder,
+#password::placeholder {
+  color: lime;
+  text-align: center;
+ }
+.Usercontainer input,
+.passwordcontainer input{
+border: 3px solid lime;
+box-sizing: border-box;
+  border-radius: 5px ;
+  padding:5px ;
+  width: 100%;
+  color: lime;
+ }
+.Usercontainer,
+.passwordcontainer,
+.checkcontainer
+ {
+  width: 100%;
+  color: lime;
+  margin-bottom: 5px;
+}
+.Usercontainer label,
+.passwordcontainer label{
+    display: block;
+}
+
+.logincontainer input[type="submit"]{
+    border: 2px;
+    border-radius: 5px;
+    background-color: lime;
+    width: 100%;
+    padding: 5px;
+}
