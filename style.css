@@ -92,3 +92,18 @@ box-sizing: border-box;
     width: 100%;
     padding: 5px;
 }
+/* Table */
+table,th,td,tr{
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 10cm;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 35%;
+}
+tr:nth-child(even){
+  background-color: pink;
+}
+tr:nth-child(odd){
+  background-color: skyblue;
+}
