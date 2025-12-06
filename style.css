@@ -92,7 +92,7 @@ h1{
     border-radius: 10px;
 }
 .task-box p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .task-link{
     display: inline-block;
