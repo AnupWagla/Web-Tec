@@ -42,14 +42,8 @@ Task 5
 Create Checkbox & Dropdown Selector
 
 🌐 Live Demo
-Visit the live site: anupwagle.com.np
-Browse individual tasks:
+Visit the live site: [anupwagle.com.np](https://anupwagle.com.np/)
 
-Task 1
-Task 2
-Task 3
-Task 4
-Task 5
-
-Visit the homepage at anupwagle.com.np
+🎯 Usage
+Visit the homepage at [anupwagle.com.np](https://anupwagle.com.np/)
 Navigate to different tasks to see various web development projects
