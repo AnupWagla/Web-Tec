@@ -1,4 +1,4 @@
- body {
+body {
   margin: 0;
   padding: 0;
   padding-top: 60px;
@@ -67,47 +67,63 @@
 .dropdown-content:hover {
   display: block;
 }
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+h1 {
+  color: black;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+.task-box {
+  background-color: wheat;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.task-box p {
+  color: rgb(0, 0, 0);
+}
+.task-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: blue;
+  background-color: #e1d8a8;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.task-link:hover {
+  background-color: lime;
+}
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 30px;
+  }
 
-.container{
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-}
-h1{
-    color: black;
-    border-bottom: 3px solid black;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.tasks-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-    gap: 20px;
-}
-.task-box{
-    background-color: wheat;
-    border: 2px solid black;
-    padding: 20px;
-    border-radius: 10px;
-}
-.task-box p{
-    color: rgb(0, 0, 0);
-}
-.task-link{
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    color: blue;
-    background-color: #e1d8a8;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-.task-link:hover{
-    background-color: lime;
-}
+  .dropdown-content {
+    min-width: 200px;
+    max-height: 300px;
+  }
 
+  .tasks-grid {
+    grid-template-columns: 1fr;
+  }
+  pre:first-of-type {
+    margin-top: 80px;
+  }
+}
 /* Task 1 */
 .box-container {
   display: flex;
@@ -156,41 +172,40 @@ h1{
   padding: 15px;
   border: 5px solid lime;
   border-radius: 10px;
-  background-color:black;
+  background-color: black;
 }
 #UserName::placeholder,
 #password::placeholder {
   color: lime;
   text-align: center;
- }
+}
 .Usercontainer input,
-.passwordcontainer input{
-border: 3px solid lime;
-box-sizing: border-box;
-  border-radius: 5px ;
-  padding:5px ;
+.passwordcontainer input {
+  border: 3px solid lime;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
   width: 100%;
   color: lime;
- }
+}
 .Usercontainer,
 .passwordcontainer,
-.checkcontainer
- {
+.checkcontainer {
   width: 100%;
   color: lime;
   margin-bottom: 5px;
 }
 .Usercontainer label,
-.passwordcontainer label{
-    display: block;
+.passwordcontainer label {
+  display: block;
 }
 
-.logincontainer input[type="submit"]{
-    border: 2px;
-    border-radius: 5px;
-    background-color: lime;
-    width: 100%;
-    padding: 5px;
+.logincontainer input[type="submit"] {
+  border: 2px;
+  border-radius: 5px;
+  background-color: lime;
+  width: 100%;
+  padding: 5px;
 }
 
 /* Task 4 */
@@ -198,7 +213,7 @@ table {
   width: 50%;
   margin: 100px auto;
   border-collapse: collapse;
-   border-radius: 15px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -222,19 +237,26 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
   background-color: white;
 }
-
-/* Mobile devices */
-@media screen and (max-width: 768px) {
-    body {
-        padding-top: 30px;
-    }
-
-    .dropdown-content {
-        min-width: 200px;
-        max-height: 300px;
-    }
-    
-    .tasks-grid {
-        grid-template-columns: 1fr;
-    }
+/* Task 6/7 */
+pre {
+  background-color: black;
+  color: lime;
+  border: 4px solid lime;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: fit-content;
+}
+h4 {
+  background-color: black;
+  color: lime;
+  border: 4px solid lime;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: fit-content;
 }

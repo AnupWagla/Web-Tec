@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 2</title>
+    <title>Task 7</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-        <!-- Nav Bar Page -->
+    <!-- Nav Bar Page -->
     <div class="navbar">
         <div class="navbar-links">
             <a href="../index.html">Home</a>
@@ -35,8 +35,28 @@
             </div>
         </div>
     </div>
-    <div>
-        <h1>↑↑Nav bar↑↑</h1>
+    <div class="code-box">
+        <pre>
+&lt;?php
+$arr = array( 44,2,58,7,22);
+sort($arr);
+echo "Ascending: ";
+for ($i = 0; $i < count($arr); $i++) {
+    echo $arr[$i] . " ";
+}
+rsort($arr);
+echo "<br>Descending: ";
+for ($i = 0; $i < count($arr); $i++) {
+    echo $arr[$i] . " ";
+}
+?&gt;
+    </pre>
     </div>
+    <h4>Output:<br>
+        Ascending: 2 7 22 44 58<br>
+        Descending: 58 44 22 7 2
+    </h4>
+    </form>
 </body>
+
 </html>
