@@ -1,9 +1,14 @@
 <?php include "header.php"; ?>
-<div class="content">
-    <form action="register_process.php" method="$_POST">
+<div class="content-center">
+    <form action="register_process.php" method="POST">
         <div>
             <label>Name</label>
             <input type="text" name="full_name" id="full_name">
+            <?php 
+                if(isset($_GET['name_empty']) & !empty($_GET['name_empty'])){
+            ?>
+            <span id="error">Please enter your full name</span>
+            <?php } ?>
         </div>
         <div>
             <label>Email</label>
@@ -23,3 +28,5 @@
     </form>
 
 </div>
+
+<?php include "footer.php"; ?>
