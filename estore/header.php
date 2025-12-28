@@ -9,12 +9,14 @@
 </head>
 <body>
    <div id="header">
-    <div id="logo">
+<div id="logo">
+    <a href="../index.html">
         <img src="./images/logo.webp" alt="Estore">
-    </div>
+    </a>
+</div>
     <div id="navbar">
         <a href="index.php">Home</a>
-        <a href="#">Services</a>
+        <a href="product.php">Product</a>
         <a href="#">Contact</a>
     </div>
     <?php if(!empty($_SESSION['user'])){ ?>

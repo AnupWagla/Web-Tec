@@ -18,12 +18,15 @@ if(isset($_POST)){
     $query = "insert into users(name,phone,email,password)values('$name','$phone', '$email','$password')";
     $res = mysqli_query($db_connection,$query);
     if($res){
-        echo "Regsitration Successfully";
+        header("Location: login.php?registration=success");
+        exit();
     }
     else{
-        echo "Error on registration";
-    }
+        header("Location: register.php?error=registration_failed");
+        exit();
+    }   
 }else{
     header("Location: register.php");
+    exit();
 }
 ?>
